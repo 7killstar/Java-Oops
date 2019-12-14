@@ -1,0 +1,43 @@
+
+>Polymorphism in Java is a concept by which we can perform a single action in different ways.Like:-Overloding,Overriding.
+Advantage:- 
+• It helps programmers to reuse the code, classes, methods written once, tested and implemented. They may be reused in many ways.
+
+• The single variable name can be used to store variables of multiple data types such as Int, Float, double, Long, etc).
+
+• Polymorphism helps in reducing the coupling between different functionalities.
+
+Disadvantage:-
+>Run time polymorphism makes performance issue 
+
+
+code:-
+class Animal{  
+void eat(){System.out.println("eating...");}  
+}  
+class Dog extends Animal{  
+void eat(){System.out.println("eating bread...");}  
+}  
+class Cat extends Animal{  
+void eat(){System.out.println("eating rat...");}  
+}  
+class Lion extends Animal{  
+void eat(){System.out.println("eating meat...");}  
+}  
+class TestPolymorphism3{  
+public static void main(String[] args){  
+Animal a;  
+a=new Dog();  
+a.eat();  
+a=new Cat();  
+a.eat();  
+a=new Lion();  
+a.eat();  
+}}  
+
+
+OutPut:-
+
+eating bread...
+eating rat...
+eating meat...
